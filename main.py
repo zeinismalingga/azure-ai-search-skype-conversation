@@ -1,11 +1,8 @@
 import os
 import streamlit as st
 from openai import AzureOpenAI   
-from dotenv import load_dotenv
 from azure.search.documents import SearchClient
 from azure.core.credentials import AzureKeyCredential
-
-load_dotenv()
 
 search_endpoint = st.secrets["AZURE_AI_SEARCH_ENDPOINT"]
 search_api_key = st.secrets["AZURE_AI_SEARCH_API_KEY"]
